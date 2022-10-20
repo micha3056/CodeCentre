@@ -1,8 +1,0 @@
-styling:
-
-https://getbootstrap.com/docs/4.0/content/code/
-
-Code Blocks:
-http://web.simmons.edu/~grabiner/comm244/weekfour/code-test.html
-
-Highlighting Code:
