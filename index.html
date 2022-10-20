@@ -1,0 +1,69 @@
+<link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+<script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="codeJson.js"></script>
+<script type="text/javascript">
+const commands = JSON.parse(commandsJson);
+console.log(commands);
+</script>
+<body>
+</body>
+
+<script>
+function copyURI(evt) {
+    evt.preventDefault();
+    navigator.clipboard.writeText(evt.target.getAttribute('href')).then(() => {
+      /* clipboard successfully set */
+    }, () => {
+      /* clipboard write failed */
+    });
+}
+
+    let tableFromJson = () => {
+    var body = `
+    <div class='row mw-50'>`;
+    for (i = 0; i<commands.length; i++) {
+        body += `
+        <div class="col-sm-4">
+            <div class="card">
+                <div class="card-body">
+                <h3 class="card-title">hier ist sample title</h3>
+                <p class="card-text">hier ist sample text</p>
+                </div>
+            </div>
+        </div>
+        `
+    }
+    body += `</div>`;
+    document.body.innerHTML = body;
+
+    let cardTitles = document.getElementsByClassName("card-title");
+    let cardText = document.getElementsByClassName("card-text");
+
+    for (i = 0; i<commands.length; i++) {
+        cardTitles[i].innerHTML = commands[i].section;
+        cardText[i].innerHTML = commands[i].text;
+    }
+
+    let commandLinks = document.getElementsByTagName("kbd");
+    console.log(commandLinks);
+    for (i = 0; i<commandLinks.length; i++) {
+	    console.log(commandLinks[i].innerHTML);
+        commandLinks[i].innerHTML = "<a href=\""+commandLinks[i].innerHTML+"\"" + "onclick=\"copyURI(event)\" >"+commandLinks[i].innerHTML+"</a>";   
+    }
+}
+tableFromJson ();
+</script>

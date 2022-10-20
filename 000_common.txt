@@ -1,0 +1,252 @@
+1. Validation: Mitarbeiter fix: anlegen
+2. Alle: Mitarbeiter View, laufende Projekte gant chart (dummy) - 37
+3. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# datagrid intellij - abo
+- Camelcase -eslint
+
+
+
+#react stuff
+possibly null pointer
+contact.companyId?
+
+# process
+
+squash and merge
+
+# SSH GEN
+ssh-keygen (admin)
+https://phoenixnap.com/kb/generate-ssh-key-windows-10
+C:\Users\Nutzer\.ssh
+
+# INSTALL SOFTWARE
+google drive app
+source tree
+conventional commits!!
+gh auth login: ssh
+git credential manager - source tree
+
+# set upo node js and frontend
+npx create-react-app frontend
+cd frontend
+
+
+STRG ALT L 
+rocket console log turbo
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+npm start
+
+mkdir backend
+npm init
+node index.js
+
+# VSCODE
+extension: linter: auto indent
+format on save setting
+tailwind extension vscode
+
+# BOOTSTRAP
+#1. install bootstrap
+#npm install react-bootstrap bootstrap
+npm install bootstrap
+#npm install sass (customize)
+
+# REACT PACKAGES
+npm install --save-dev express cors
+npm install body-parser for POST
+
+# kill services
+netstat -ano | findstr :3000
+taskkill /pid 8688 /F
+
+CRAWLER extra starten: 
+
+# GIT
+to server: commit and push
+from server: fetch
+
+# SHORTCUTS VSCODE REGEX
+#remove empty lines:
+Simple map:
+
+https://openlayers.org/en/latest/examples/simple.html
+
+
+JUMP TO LINE
+STRG G
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+################################
+
+regular expr on!
+STRG H 
+^$\n
+
+#Settings
+STRG SHIFT P
+settings.json
+"editor.formatOnSave": true
+
+# INFO HOSTER
+heroku
+
+research: 
+next.js
+linode jwt.io netify
+
+# MIX react variable string
+<a href={"contacts/" + contact.id} 
+
+State Hook - set state within function
+
+Chrome Debug
+method:POST
+
+
+CRM Tool
+cypress testing framework
+
+Mapping: Projekte und Mitarbeiter
+Trend Analyse - Technologien, wie Freelancer Markt sich entwickelt
+
+Ansprechpartner:
+Mitarbeiter: Alle Infos
+Firmen: Firmendaten, und Ansprechpartner
+
+Suchfeld.
+
+Fly.io: 	Daten liegen dort: HOSTING
+Postresql
+Projekt auf Github: project crawler
+node: playwright
+
+crawler: wenn er failt, dann email senden
+
+Aufgaben: projects/2
+
+Kontakte: nur Ansicht, etwas kleiner!
+Filter: für Kontaktliste: Dropdown für Filter
+
+Relation Kontake 0 Firma und umgedreht
+remix - fullstack framework?
+remix.run
+
+Filter auf alle Tabellen anwendbar
+
+Mitarbeiter: seperat... später
+
+
+POSTGRES Windows
+
+npm install
+psql tool
+pgAdmin 4 GUI tool
+
+GOOGLE_CLIENT_ID=""
+GOOGLE_CLIENT_SECRET=""
+JSON
+npm run build
+
+npm run dev
+
+iwr https://fly.io/install.ps1 -useb | iex
+use flyctl ssh console
+flyctl apps list
+project-crawler-875b
+
+flyctl config display -a project-crawler-875b-db
+postgres env dump - credentilas: ENV
+
+#DUMP
+flyctl ssh console -a project-crawler-875b-db
+postgres dump
+pg_dump project-crawler-875b-db > dumpfile.sql --insert /etc/dump
+
+
+pg_dump project-crawler-875b-db > dumpfile
+postgres -V
+
+postgres://project_crawler_875b:K9pE8nUqg5VXZan@top2.nearest.of.project-crawler-875b-db.internal:5432/project_crawler_875b
+DUMP String is in env variable
+
+clipcopy < my_file.txt
+
+#SCP
+flyctl ssh establish
+flyctl ssh issue --agent
+Once you’ve issued a cert, connect to app.internal if WireGuard is active or your VM’s private ip (found with flyctl ips private)
+
+scp root@app.internal:/path/to/file file
+
+#crawler:
+npm run crawler
+npm run crawler freelancer
+!!headless auskommentieren
+npx playwright test freelance...
+
+IP maskieren
+npm run reset
+
+
+#ESLINT 
+pnpm run eslint
+
+npm run lint
+
+
+#TAILWIND
+fails to show forms:
+npm install -D @tailwindcss/forms
+/ tailwind.config.js
+
+
+##############MIGRATE
+pnpm run setupmigration
+pnpm install
+pnpm run reset
+pnpm run setup
+npx prisma migrate resolve --applied 20221018070122_init
+
+
