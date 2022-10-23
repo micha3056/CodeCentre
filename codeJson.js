@@ -7,19 +7,28 @@ var commandsJson = `
 	},
 	{
 		"section": "windows commands",
-		"text": "to kill a service on port 3000, find PID <kbd>netstat -ano | findstr :3000</kbd> and kill the service with <kbd>taskkill /F /pid 8688</kbd> ssh key generator <kbd>ssh-keygen</kbd>"
+		"text": "to kill a service on port 3000, find PID <kbd>netstat -ano | findstr :3000</kbd> and kill the service with <kbd>taskkill /F /pid 8688</kbd> ssh key generator <kbd>ssh-keygen</kbd> to send an emoji <kbd>WIN + .</kbd>"
 	},
 	{
 		"section": "VSCODE ShortCuts",
-		"text": "Jump to Line: <kbd>STRG + G</kbd> Find in Files: <kbd>???</kbd> Find File: <kbd>STRG + P</kbd> Configuration: <kbd>STRG + SHIFT + PP</kbd> Console Log Rocket: <kbd>STRG + ALT + L</kbd> Duplicate Line: <kbd>ALT + SHIFT + DOWN</kbd>"
+		"text": "Jump to Line: <kbd>STRG + G</kbd> Find in Files: <kbd>STRG + SHIFT + F</kbd> Find File: <kbd>STRG + P</kbd> Configuration: <kbd>STRG + SHIFT + PP</kbd> Console Log Rocket: <kbd>STRG + ALT + L</kbd> Duplicate Line: <kbd>ALT + SHIFT + DOWN</kbd>"
 	},
 	{
 		"section": "FLY IO & Crawler",
 		"text": "to login: <kbd>???</kbd>, to deploy: <kbd>???</kbd>, to dump a database: <kbd>???</kbd> to start the crawler make it headless in code, start the backend <kbd>npm run dev</kbd> and <kbd>npx playwright test freelance</kbd>"
+	},
+	{
+		"section": "Postgres",
+		"text": "check version: <kbd>psql --version</kbd> check structure: <kbd>psql -d &quot;crawler&quot; -c '</kbd> login: <kbd>psql -d crawler -U micha</kbd>"
 	}
 ]
 `;
 
+// <kbd></kbd>
 // netstat -ano | findstr :3000
 // taskkill /F /pid 8688
-// <kbd></kbd>
+// " - &quot;					'  - '
+// psql -d "$db_name" -c '
+
+
+//pass: micha cmdscale
