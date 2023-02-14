@@ -23,12 +23,3 @@ var commandsJson = `
 	}
 ]
 `;
-
-// <kbd></kbd>
-// netstat -ano | findstr :3000
-// taskkill /F /pid 8688
-// " - &quot;					'  - '
-// psql -d "$db_name" -c '
-
-
-//pass: micha cmdscale
